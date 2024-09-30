@@ -60,4 +60,6 @@ document.getElementById('download-btn').addEventListener('click', function() {
     link.href = URL.createObjectURL(blob);
     link.download = "confirmacoes_CMBH_2024.txt";
     link.click();
+
+    URL.revokeObjectURL(link.href);
 });

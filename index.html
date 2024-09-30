@@ -3,67 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmação de Presença - CMBH 2024</title>
+    <title>CMBH 2024 - Confirmação de Presença</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Confirmação de Presença - CMBH 2024</h1>
-        <p>Futebol aos domingos, de 08h às 10h30min.</p>
+    <header>
+        <h1>CMBH 2024 - Confirmação de Presença</h1>
+        <p>Futebol todos os domingos, das 08h às 10h30min no Centro de Preparação de Oficiais, Avenida Mal. Esperidião Rosa, 400 - São Francisco, Belo Horizonte - MG</p>
+    </header>
 
-        <!-- Localização -->
-        <h2>Localização do Futebol</h2>
-        <img src="An_illustration_showing_the_location_of_a_football.png" alt="Localização do Futebol" width="100%" />
-
-        <!-- Formulário de confirmação -->
+    <section>
+        <h2>Confirme sua Presença</h2>
         <form id="confirmacao-form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" required>
 
             <label for="data-confirmacao">Data de Confirmação:</label>
-            <input type="datetime-local" id="data-confirmacao" name="data" required>
+            <input type="datetime-local" id="data-confirmacao" required>
 
             <button type="submit">Confirmar Presença</button>
         </form>
 
-        <div id="mensagem-multa"></div>
+        <p id="mensagem-multa"></p>
+    </section>
 
-        <!-- Tabela de valores -->
-        <h2>Valores</h2>
+    <section>
+        <h2>Tabela de Multas e Mensalidades</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Descrição</th>
-                    <th>Valor (R$)</th>
+                    <th>Dia de Confirmação</th>
+                    <th>Valor da Multa</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Mensalidade</td>
-                    <td>30,00</td>
+                    <td>Até sexta-feira 11h</td>
+                    <td>Sem multa</td>
                 </tr>
                 <tr>
-                    <td>Diária</td>
-                    <td>15,00</td>
+                    <td>Sexta-feira após 11h</td>
+                    <td>R$ 5,00</td>
                 </tr>
                 <tr>
-                    <td>Multa - Após sexta-feira 11h</td>
-                    <td>5,00</td>
+                    <td>Sábado</td>
+                    <td>R$ 10,00</td>
                 </tr>
                 <tr>
-                    <td>Multa - Sábado</td>
-                    <td>10,00</td>
-                </tr>
-                <tr>
-                    <td>Multa - Domingo</td>
-                    <td>20,00</td>
+                    <td>Domingo</td>
+                    <td>R$ 20,00</td>
                 </tr>
             </tbody>
         </table>
+        <p>Mensalidade: R$30,00 | Diária: R$15,00</p>
+    </section>
 
-        <!-- Botão para baixar confirmações -->
+    <section>
         <button id="download-btn">Baixar Confirmações</button>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
