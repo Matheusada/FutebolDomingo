@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença - CMBH 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação de Presença - CMBH 2024</h1>
+        <p>Futebol aos domingos, de 08h às 10h30min.</p>
+
+        <!-- Localização -->
+        <h2>Localização do Futebol</h2>
+        <img src="An_illustration_showing_the_location_of_a_football.png" alt="Localização do Futebol" width="100%" />
+
+        <!-- Formulário de confirmação -->
+        <form id="confirmacao-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data-confirmacao">Data de Confirmação:</label>
+            <input type="datetime-local" id="data-confirmacao" name="data" required>
+
+            <button type="submit">Confirmar Presença</button>
+        </form>
+
+        <div id="mensagem-multa"></div>
+
+        <!-- Tabela de valores -->
+        <h2>Valores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mensalidade</td>
+                    <td>30,00</td>
+                </tr>
+                <tr>
+                    <td>Diária</td>
+                    <td>15,00</td>
+                </tr>
+                <tr>
+                    <td>Multa - Após sexta-feira 11h</td>
+                    <td>5,00</td>
+                </tr>
+                <tr>
+                    <td>Multa - Sábado</td>
+                    <td>10,00</td>
+                </tr>
+                <tr>
+                    <td>Multa - Domingo</td>
+                    <td>20,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Botão para baixar confirmações -->
+        <button id="download-btn">Baixar Confirmações</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
